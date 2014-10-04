@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cassert>
+using namespace std;
 
 // NOTE: you should move this `if` down as you start solving each task
 
@@ -58,7 +59,20 @@ void task_5_copy(const int * arr1, int * arr2, int size)
  //   arr2 = arr1;
 }
 
+
+// Task 7
+// print array `arr`
+void task_7_print(int * arr, int size, char delim = ' ')
+{
+    // Hint: something wrong here; run this from main()
+    for(int i = 0; i < size; ++i)
+    {
+        std::cout << arr[i] << delim;
+    }
+}
+
 #if 0
+
 // Task 6
 // copy array `arr1` to array `arr2` of the same size
 void task_6_poor_copy(int * arr1, int * arr2)
@@ -70,18 +84,6 @@ void task_6_poor_copy(int * arr1, int * arr2)
     }
 }
 
-// Task 7
-// print array `arr`
-void task_7_print(int * arr, int size, char delim = ' ')
-{
-    // Hint: something wrong here; run this from main()
-    for(int i = 0; i <= size; ++i)
-    {
-        std::cout << a[i] << delim;
-    }
-}
-
-
 #endif
 
 int main()
@@ -92,10 +94,11 @@ int main()
 	task_2();
 	assert(task_3_zero() == 0);
 	task_4();
-	task_5_copy(arr1,arr2,size);
+	task_5_copy(arr1, arr2, size);
     assert(arr2[0] == 1);
     assert(arr2[1] == 2);
     assert(arr2[2] == 3);
     assert(arr2[3] == 4);
     assert(arr2[4] == 5);
+	task_7_print(arr1, size);
 }
