@@ -20,7 +20,7 @@ void task_2()
 {
     int a[5] = {0};
     
-    assert(a[4]);// -- place here one of these and
+    assert(!a[4]);// -- place here one of these and
     //                                 explain your choice in commit msg
 }
 
