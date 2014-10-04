@@ -24,19 +24,19 @@ void task_2()
     //                                 explain your choice in commit msg
 }
 
-#if 0
 // returns zero
 int task_3_zero()
 {
     // Task 3
     // Hint 1: fix with initialization (not assignment)
     // Hint 2: you can use only one zero and not five of them! cf. task 2
-    int a[5];
+    int a[5] = {0};
     
     assert(!a[4]);
     return a[4]; // don't touch this!
 }
 
+#if 0
 void task_4()
 {
     // Task 4: asserts at the end must hold
@@ -85,4 +85,5 @@ void task_7_print(int * arr, int size, char delim = ' ')
 int main()
 {
 	task_2();
+	assert(task_3_zero() == 0);
 }
